@@ -16,8 +16,10 @@ namespace TodoApp.NTier.DataAccess.Interfaces
 
         Task Create(T entity);
 
-        Task Update(T entity);
+        void Update(T entity);
 
-        Task Remove(T entity);
+        void Remove(T entity);
+
+        IQueryable<T> GetQuery();
     }
 }
